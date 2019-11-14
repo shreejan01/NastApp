@@ -1,0 +1,37 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<header th:fragment="head">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet"
+		th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+		type="text/css">
+	
+	<link rel="stylesheet"
+	th:href="@{/webjars/font-awesome/5.9.0/css/fontawesome.min.css}">
+	
+	<link rel="stylesheet"
+	th:href="@{/META-INF/resources/webjars/font-awesome/5.9.0/css/all.min.css}">
+	
+
+	<nav class="navbar  navbar-expand-md navbar-light bg-light  px-5  fixed-top ">
+    
+    <a th:href="@{/home}" class="navbar-brand "><img th:src="@{/images/declogo.png}" width="55px" height="55px" alt="logo"> NAST</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu"> 
+              <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="myMenu">
+
+    <ul class="navbar-nav ml-auto mr-5">
+    <li class="nav-item active"> <a th:href="@{/home}" class="nav-link">Home</a></li>
+    <li class="nav-item"> <a th:href="@{/routine}" class="nav-link">Routine</a></li>
+    <li class="nav-item"> <a th:href="@{/notice}" class="nav-link">Notice</a></li>
+    <li class="nav-item"> <a th:href="@{/result}" class="nav-link">Result</a></li>
+    <li class="nav-item"> <a th:href="@{/calendar}" class="nav-link">Calendar</a></li>
+    <li class="nav-item"> <a th:href="@{/gallery}" class="nav-link">Gallery</a></li>
+    <li class="nav-item"> <a th:href="@{/login}" class="nav-link">Login</a></li>
+     </ul>
+    </div>
+     </nav>
+</header>
+</html>

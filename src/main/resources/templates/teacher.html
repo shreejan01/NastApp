@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<link rel="stylesheet"
+		th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+		type="text/css">
+<meta charset="ISO-8859-1">
+<title>Teacher</title>
+</head>
+<body class="bg-info">
+<!-- add marks form -->
+  <div class="container bg-light px-5 pb-5 my-3 teacher">
+  <div class="text-justify text-center pt-3"><h3>Welcome to the Add Marks Page</h3></div>
+  <hr/>
+  <form>
+      <div class="row">
+      	<div class="col-md-5 col-sm-12 ">
+      	  <div class="form-group">
+          <label>Faculty</label>
+          <select class="custom-select">
+                <option selected> Select Faculty</option>
+                <option value="1">Science And Technology</option>
+                <option value="2">Management</option>
+          </select>
+         </div>
+      	 
+      	  <div class="form-group">
+          <label>Semester</label>
+          <select class="custom-select">
+                <option selected> Select Semester</option>
+                <option value="1">Semester I</option>
+                <option value="2">Semester II</option>
+                <option value="3">Semester III</option>
+                <option value="4">Semester IV</option>
+                <option value="5">Semester V</option>
+                <option value="6">Semester VI</option>
+                <option value="7">Semester VII</option>
+                <option value="8">Semester VIII</option>
+                <option value="9">Semester IX</option>
+                <option value="10">Semester X</option>
+          </select>
+         </div>
+      	   
+      	  <div class="form-group">
+          <label>Subject</label>
+          <select class="custom-select">
+                <option selected> Select Subject</option>
+                <option value="1">Subject I</option>
+                <option value="2">Subject II</option>
+                <option value="3">Subject III</option>
+                <option value="4">Subject IV</option>
+                <option value="5">subject V</option>
+                <option value="6">Subject VI</option>
+                <option value="7">Subject VII</option>
+          </select>
+         </div>        
+         
+           <div class="form-group">
+          <label>Status</label>
+         <select class="custom-select">
+                <option selected> Select Status</option>
+                <option value="1">Fall</option>
+                <option value="2">Spring</option>
+         </select>
+         </div>
+           <button type="submit" class="btn btn-primary btn-inline mb-4  mr-5">Add Marks</button>
+           <button type="submit" class="btn btn-primary btn-inline mb-4  ">Update Marks</button>
+         
+          </div>
+		  
+		<div class="col-md-2 col-sm-12 "></div>
+  
+          <div class="col-md-5 col-sm-12 ">
+           <div class="form-group">
+           <label>Program</label>
+           <select class="custom-select">
+                <option selected>Select Program</option>
+                <option value="1">BE Computer</option>
+                <option value="2">BE Civil</option>
+                <option value="3">BCA</option>
+                <option value="4">BBA</option>
+         </select>
+         </div>
+         
+           <div class="form-group">
+          <label>Terminal</label>
+         <select class="custom-select">
+                <option selected>Select Terminal</option>
+                <option value="1">First Terminal Examination</option>
+                <option value="2">Pre-University Examination</option>
+         </select>
+         </div>
+         
+           <div class="form-group">
+          <label>Year</label>
+         <select class="custom-select">
+                <option selected>Select Year</option>
+                <option value="1">2076</option>
+                <option value="2">2077</option>
+                <option value="3">2078</option>
+                <option value="4">2079</option>
+                <option value="5">2080</option>
+                <option value="6">2081</option>
+                <option value="7">2082</option>
+                <option value="8">2083</option>
+                <option value="9">2084</option>
+                <option value="10">2085</option>
+                <option value="11">2086</option>
+                <option value="12">2087</option>
+                <option value="13">2088</option>
+                <option value="14">2089</option>
+                <option value="15">2090</option>
+         </select>
+         </div>
+          </div>     
+         </div>
+         </form><!-- add marks form section end-->
+          <!-- marks ledger showing box -->
+         <div class="displayform">
+           <div class="bg-danger"></div>
+         </div><!-- marks show box ends -->
+         </div> 
+        
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head th:replace="/shared/header::head">
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet"
+	th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+	type="text/css">
+
+<link rel="stylesheet"
+	th:href="@{/webjars/font-awesome/5.9.0/css/fontawesome.min.css}">
+	
+	<link rel="stylesheet"
+	th:href="@{/META-INF/resources/webjars/font-awesome/5.9.0/css/all.min.css}">
+
+
+<title>Home</title>
+</head>
+<body>
+	<!-- image slider -->
+	<div th:replace="/shared/slider::bannerslider"></div> <!-- end image slider -->
+
+	<!-- welcome card -->
+	<div class="card">
+		<div class="card-body text-center">
+			<h1 class="card-title  ">Welcome to National Academy Of Science
+				And Technology</h1>
+
+			<p class="card-text ">National Academy of Science and Technology,
+				popularly known as NAST, is an English medium educational
+				Institution.Promoted by a team of researchers and professionals
+				renowned both at home and abroad, NAST has proved itself as a center
+				of learning for academic excellence in the field of
+				science-technology and management. It has been offering probably
+				best facilities and greater opportunities to unexplored talents and
+				economically less income groups especially in province no 7 of the
+				country. We feel pleasure to state that we have been pioneering
+				engineering education in the Country's Western region. Since its
+				inception.....................</p>
+
+			<a href="#" class="btn btn-info"> know more</a>
+
+		</div>
+	</div> <!-- end welcome card -->
+
+	<!-- notice list -->
+	<div class="container my-4 border-bottom noticelist">
+	<nav>
+		<div class="nav nav-tabs" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="nav-home-tab"
+				data-toggle="tab" href="#nav-home" role="tab"
+				aria-controls="nav-home" aria-selected="true">Notice</a> <a
+				class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+				href="#nav-profile" role="tab" aria-controls="nav-profile"
+				aria-selected="false">Event</a> <a class="nav-item nav-link"
+				id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+				role="tab" aria-controls="nav-contact" aria-selected="false">News</a>
+		</div>
+    
+	</nav>	
+		<div class="tab-content " id="nav-tabContent">
+		<div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+			aria-labelledby="nav-home-tab">
+			   
+			Notice about holiday . It is informed to everyone that tomorrow is going to be holiday.</div>
+		<div class="tab-pane fade" id="nav-profile" role="tabpanel"
+			aria-labelledby="nav-profile-tab">Farewell program . Farewell program is going to be conducted on the day of aswin.</div>
+		<div class="tab-pane fade" id="nav-contact" role="tabpanel"
+			aria-labelledby="nav-contact-tab">News about principal. Principal is going to America next month. So you all can wish him good luck on his journey</div>
+	</div>
+	
+	<!-- pagination starts -->
+	
+	<nav aria-label="Page navigation ">
+  <ul class="pagination mt-5">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+ </nav><!-- pagination ends -->
+
+	</div> <!-- end notice list -->
+	
+	
+	<!-- Icon box lists -->
+	<div class="container boxlist">
+		<div class="row my-row  text-center">
+			<div class="col-md-3 col-sm-6 my-col pt-2  ">
+				
+					<div class="row  text-center p-4 iconBox shadow">
+					 <div class="col-md-12">
+					   <img th:src="@{/images/history.jpg}" alt="history pic">
+					 </div>
+					
+					<a class="mx-auto mt-2 " th:href="@{aboutUs}">
+						Our History
+					
+				</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6  my-col pt-2 ">
+				
+					<div class="row  text-center p-4 iconBox shadow">
+					 <div class="col-md-12">
+					   <img th:src="@{/images/routine.jpg}" alt="routine pic">
+					 </div>
+					
+					<a class="mx-auto mt-2 " th:href="@{routine}">
+						Routine
+					
+				</a>
+				</div>
+				
+			</div>
+			<div class="col-md-3 col-sm-6  my-col pt-2 ">
+				
+					<div class="row  text-center p-4 iconBox shadow">
+					 <div class="col-md-12">
+					   <img th:src="@{/images/result.jpg}" alt="result pic">
+					 </div>
+					
+					<a class="mx-auto mt-2 " th:href="@{result}">
+						Result
+					
+				</a>
+				</div>
+				
+			</div>
+			<div class="col-md-3 col-sm-6 my-col pt-2  ">
+				<div class="row  text-center p-4 iconBox shadow">
+					 <div class="col-md-12">
+					   <img th:src="@{/images/calender.jpg}" alt="Calendar pic">
+					 </div>
+					
+					<a class="mx-auto mt-2" th:href="@{calendar}">
+						Calendar
+					
+				</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row  my-row  text-center mt-5">
+			<div class="col-md-6 my-col pt-2 ">
+				
+					<div class="row  text-center p-4 iconBox shadow">
+					 <div class="col-md-12">
+					   <img th:src="@{/images/gallery.jpg}" alt="gallery pic">
+					 </div>
+					
+					<a class="mx-auto mt-2 " th:href="@{gallery}">
+						Gallery
+					
+				</a>
+				</div>
+			</div>
+			<div class="col-md-6 my-col pt-2 ">
+				
+					<div class="row  text-center p-4 iconBox shadow">
+					 <div class="col-md-12">
+					   <img th:src="@{/images/video.jpg}" alt="videos pic ">
+					 </div>
+					
+					<a class="mx-auto mt-2 " th:href="@{videos}">
+						Videos
+					
+				</a>
+				</div>
+				
+			</div>
+		</div>
+	</div> <!-- end icon box list -->
+
+  <!-- principal & vice-principal card -->
+	<div class="container principalPic">
+		<div class="row my-5 bg-light ">
+			<div class="col-sm-6  p-5 text-center ">
+				<img th:src="@{images\sivhari.jpg}" alt="Principal photo" class="img-fluid">
+			</div>
+			<div class="col-sm-6  p-5 ">
+				<h2>From the Desk of Principal</h2>
+				<p class="my-3">There are three principal means of acquiring knowledge...observation of nature, reflection, and experimentaion. Observation collects facts, reflection combines them; experimentation verifies the result of that combination. We focus on quality education. Good education is the key to success...</p>
+				<a href="#" class="btn btn-outline-primary"> know more</a>
+			</div>
+		</div>
+
+		<div class="row  bg-light ">
+			<div class="col-sm-6  p-5">
+				<h2>From the Desk of Vice Principal</h2>
+				<p class="my-3">Education is the passport to the future, for tomorrow belongs to those who prepare for it today. Your attitude; not your aptitude; will determine your altitude. If you think education is expensive, try ignorance. The only person who is educated is the one who has learned how to learn and change...</p>
+				<a href="#" class="btn btn-outline-primary"> know more</a>
+			</div>
+
+			<div class="col-sm-6  p-5 text-center">
+				<img th:src="@{images\hod.png}" alt="Vice Principal photo"
+					class="img-fluid">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container my-4">
+		<h2 class="text-center">Contact Us</h2>
+		<div class="row my-3">
+			<div class="col-md-8">
+				<form action="#" method="post">
+					<input class="form-control" name="name" placeholder="Name" /><br />
+					<input class="form-control" name="phone" placeholder="Phone" /><br />
+					<input class="form-control" name="email" placeholder="Email" /><br />
+					<textarea class="form-control" name="text"
+						placeholder="How can we help you?" style="height: 150px;"></textarea>
+					<br /> <input class="btn btn-primary" type="submit" value="send" /><br />
+					<br />
+			</div>
+			<div class="col-md-4 pl-5">
+				<strong>National Academy of Science and Technology</strong><br />
+				Dhangadhi-04, Uttar Behadi, Kailali <br /> Phone:
+				+977-91-523312,521312 <br /> Fax: +977-91-523979 <br /> Email:
+				nastdhn@gmail.com, nastdhn@yahoo.com <br /> <br /> <strong>Website:</strong><br />
+				<a href="http://www.nast.edu.np" target="_blank">www.nast.edu.np</a></br>
+			</div>
+		</div>
+	</div> <!-- end of principal and vice-principal card -->
+     
+     <!-- footer starts -->
+	<div th:replace="/shared/footer::foot"></div>
+	<!-- end footer -->
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.js}"></script>
+	<script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+	
+</body>
+</html>

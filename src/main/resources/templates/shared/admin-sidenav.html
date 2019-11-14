@@ -1,0 +1,43 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<div th:fragment="dashsidenav">
+
+
+         
+           <div class="sidebar-sticky dashsidebar pb-3">
+           <a th:href="@{/dashboard}" class="navbar-brand ml-3 mt-2 mr-2 ">
+                  <img src="/images/declogo.png" width="55px" height="55px" alt="logo" class="mr-2">NAST</a>
+           <hr>
+           
+           <div class="collapse navbar-collpase" id="dashsidemenu">                
+          <ul class="nav flex-column">
+                  <li class="nav-item"><a th:href="@{/dashboard}" class="nav-link">Home</a></li>
+                 <li class="nav-item"><a th:href="@{/notice/list}" class="nav-link">Notice</a></li>
+                 <li class="nav-item"><a th:href="@{/event/list}" class="nav-link">Event</a></li>
+                 <li class="nav-item"><a th:href="@{/routine/list}" class="nav-link">Routine</a></li>
+                 <li class="nav-item"><a th:href="@{/result/list}" class="nav-link">Result</a></li>
+                 <li class="nav-item"><a th:href="@{/student/list}" class="nav-link">Student</a></li>
+                 <li class="nav-item"><a th:href="@{/teacher/list}" class="nav-link">Teacher</a></li>
+                 <li class="nav-item"><a th:href="@{/parent/list}" class="nav-link">Parent</a></li>
+                 <li class="nav-item"><a th:href="@{/course/list}" class="nav-link">Course</a></li>
+                 <li class="nav-item"><a th:href="@{/faculty/list}" class="nav-link">Faculty</a></li>
+                 <li class="nav-item"><a th:href="@{/program/list}" class="nav-link">Program</a></li>
+                 <li class="nav-item"><a th:href="@{/semester/list}" class="nav-link">Semester</a></li>
+                 <li class="nav-item"><a th:href="@{/subject/list}" class="nav-link">Subject</a></li>
+                 <li class="nav-item"><a th:href="@{/parent/list}" class="nav-link">Parent</a></li>                
+                 <li class="nav-item"><a th:href="@{/calendar/list}" class="nav-link">Calendar</a></li>
+                 <li class="nav-item"><a th:href="@{/notifications/list}" class="nav-link">Notifications</a></li>
+                 <li class="nav-item"><a th:href="@{/gallery/list}" class="nav-link">Gallery</a></li>
+                 <li class="nav-item"><a th:href="@{/videos/list}" class="nav-link">Videos</a></li>
+       </ul>
+       </div>
+       </div> 
+          
+      
+    
+
+         
+
+</div>
+</html>
+
+       

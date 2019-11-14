@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+<link rel="stylesheet"
+	th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+	type="text/css">
+
+<link rel="stylesheet"
+	th:href="@{/webjars/font-awesome/5.9.0/css/fontawesome.min.css}">
+	
+	<link rel="stylesheet"
+	th:href="@{/META-INF/resources/webjars/font-awesome/5.9.0/css/all.min.css}">
+
+<title>Dashboard</title>
+</head>
+<body>
+
+<div th:replace="/shared/admin-nav::topnavbar"></div>
+
+<!-- start container -->
+<!-- start Dashboard area -->
+<div class="container-fluid">
+     <div class="row"> <!-- start Row -->
+      <nav class="col-md-2 navbar-secondary bg-secondary sidebar border"><!-- Side navigation bar starts-->
+     
+     <div th:replace="/shared/admin-sidenav::dashsidenav"></div>
+     </nav><!-- End side bar -->
+   
+         
+          <div class="col-sm-9 col-md-10 dasharea"><!-- dasharea starts -->
+             <button type="button" class="navbar-toggler btn-outline ml-2 mt-2 bg-info text-white" data-toggle="collapse" data-target="#dashsidemenu" >Menu
+                     <span class="navbar-toggler-icon"></span>
+           </button>
+           <hr/>
+             
+            <h1 class="ml-3 mt-4 text-center">Welcome to the Dashboard of NAST ADMIN</h1>
+           <h3 class="ml-3 mt-3 text-center">Get ready to add new contents from here...</h3>
+           
+           <div class="row text-center mx-5 mt-5"><!-- Row II starts -->
+           <div class="col-sm-4"></div>
+           <div class="col-sm-4"><!-- column II starts -->
+           <div class="card text-white bg-danger mb-3" style="max-width:18rem;">
+           <div class="card-header">Message Received</div>
+           <div class="card-body">
+           <h4 class="card-title">05</h4>
+           <a class="btn text-white" href="#">View</a>
+           </div>
+           </div>
+            </div> <!-- coloumn II ends -->
+            </div><!--Row II ends-->
+            
+            
+            <div class="mx-2 my-5 text-center">
+                 <p class="bg-dark text-white p-2"> List of Messagers</p>
+                 
+                 <table class="table">
+                   <thead>
+                   <tr>
+                   <th scope="col"> Senders ID</th>
+                   <th scope="col"> Name </th>
+                   <th scope="col"> Email </th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                          <td>1</td>
+                          <td>Shreejan</td>
+                          <td>shreejan.lohar@gmail.com</td>
+                       </tr>
+                       <tr>
+                          <td>2</td>
+                          <td>Manisha</td>
+                          <td>manishakunwar@gmail.com</td>
+                       </tr>
+                       <tr>
+                          <td>3</td>
+                          <td>Mukund</td>
+                          <td>mukundrajjoshi@gmail.com</td>
+                       </tr>
+                       <tr>
+                          <td>4</td>
+                          <td>Deepa</td>
+                          <td>deepaojha@gmail.com</td>
+                       </tr>
+                   </tbody>
+                 </table>
+            </div>
+         
+         
+         
+         </div><!-- End Dashboard area -->
+          </div><!-- End Row -->
+     </div><!-- End Container -->        
+ 
+ <!-- footer starts -->
+	<div th:replace="/shared/footer::foot"></div>
+	<!-- end footer -->
+ 
+ 
+ 
+ 
+
+    
+    <!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.js}"></script>
+	<script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+	
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head th:replace="/shared/header::head">
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet"
+	th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+	type="text/css">
+
+<link rel="stylesheet"
+	th:href="@{/webjars/font-awesome/5.9.0/css/fontawesome.min.css}">
+
+<link rel="stylesheet"
+	th:href="@{/META-INF/resources/webjars/font-awesome/5.9.0/css/all.min.css}">
+
+
+<title>Home</title>
+</head>
+<body>
+	<!-- image slider -->
+	<div th:replace="/shared/slider::bannerslider"></div>
+	<!-- end image slider -->
+
+
+	<div class="container my-4 border-bottom noticelist">
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab"
+					data-toggle="tab" href="#nav-home" role="tab"
+					aria-controls="nav-home" aria-selected="true">Notice</a> <a
+					class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+					href="#nav-profile" role="tab" aria-controls="nav-profile"
+					aria-selected="false">Event</a> <a class="nav-item nav-link"
+					id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+					role="tab" aria-controls="nav-contact" aria-selected="false">News</a>
+			</div>
+
+		</nav>
+		<div class="tab-content " id="nav-tabContent">
+			<div class="tab-pane fade show active mt-5 bg-light" id="nav-home" role="tabpanel"
+				aria-labelledby="nav-home-tab" th:each="notice, iterator : ${noticeList}">
+
+				
+					<a href="@{#}"><h2 th:text="${notice.noticeTitle}"></h2></a>
+					<p th:text="${notice.notice}"></p>
+					<p  th:text="${notice.publishedDate}"></p>
+					<p th:text="${notice.noticeType}"></p>
+					<p th:text="${notice.isActive}"></p>			
+
+
+			</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel"
+				aria-labelledby="nav-profile-tab">Farewell program . Farewell
+				program is going to be conducted on the day of aswin.</div>
+			<div class="tab-pane fade" id="nav-contact" role="tabpanel"
+				aria-labelledby="nav-contact-tab">News about principal.
+				Principal is going to America next month. So you all can wish him
+				good luck on his journey</div>
+		</div>
+
+		<!-- pagination starts -->
+
+		<nav aria-label="Page navigation ">
+			<ul class="pagination mt-5">
+				<li class="page-item disabled"><a class="page-link" href="#"
+					tabindex="-1" aria-disabled="true">Previous</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Next</a></li>
+			</ul>
+		</nav>
+		<!-- pagination ends -->
+
+	</div>
+
+	<!-- footer starts -->
+	<div th:replace="/shared/footer::foot"></div>
+	<!-- end footer -->
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.js}"></script>
+	<script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

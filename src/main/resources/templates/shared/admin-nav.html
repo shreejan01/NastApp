@@ -1,0 +1,20 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<nav th:fragment="topnavbar">
+
+	<!-- navbar starts -->
+
+<nav class="navbar navbar-dark bg-dark dashtopnav">
+  <div class="container-fluid">
+  <div class="navbar-header ">
+  <a class="navbar-brand"  th:href="@{/dashboard}">DASHBOARD</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+         <li > <a class="text-white" th:href="@{/home}"> Log Out</a> </li>
+    </ul>
+ </div> 
+</nav>
+<!-- topnavbar ends -->
+
+</nav>
+</html>

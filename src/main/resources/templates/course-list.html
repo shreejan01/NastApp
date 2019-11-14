@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<link rel="stylesheet"
+		th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+		type="text/css">
+
+<meta charset="ISO-8859-1">
+<title>Course List</title>
+</head>
+<body>
+<div th:replace="/shared/admin-nav::topnavbar"></div>
+
+<!-- start container -->
+<!-- start Dashboard area -->
+<div class="container-fluid">
+     <div class="row"> <!-- start Row -->
+      <nav class="col-md-2 navbar-secondary bg-secondary sidebar border"><!-- Side navigation bar starts-->
+     
+     <div th:replace="/shared/admin-sidenav::dashsidenav"></div>
+     </nav><!-- End side bar -->
+   
+         
+          <div class="col-sm-9 col-md-10 dasharea"><!-- dasharea starts -->
+             <button type="button" class="navbar-toggler btn-outline ml-2 mt-2 bg-info text-white" data-toggle="collapse" data-target="#dashsidemenu" >Menu
+                     <span class="navbar-toggler-icon"></span>
+           </button>
+           <hr/>
+
+   <div class="container">
+	<a th:href="@{/dashboard/course/create}">Add Course</a>
+	<table class="table table-bordered ">
+	    <thead class="thead-light">
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Course Code</th>
+			<th scope="col">Full Marks</th>
+			<th scope="col">Pass Marks</th>
+			<th scope="col" colspan="2">Grace Marks</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="course, iterator : ${courseList}">
+			<td th:text="${iterator.index+1}"></td>
+			<td th:text="${course.courseCode}"></td>
+			<td th:text="${course.fullMarks}"></td>
+			<td th:text="${course.passMarks}"></td>
+			<td th:text="${course.graceMarks}"></td>
+			
+			<td><a th:href="@{'/dashboard/course/edit/'+${course.courseId}}">Edit</a></td>
+		</tr>
+		</tbody>
+	</table>
+	</div>
+	
+	</div><!-- End Dashboard area -->
+          </div><!-- End Row -->
+     </div><!-- End Container -->        
+ 
+ <!-- footer starts -->
+	<div th:replace="/shared/footer::foot"></div>
+	<!-- end footer -->
+ 
+	
+	

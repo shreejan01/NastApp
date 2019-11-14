@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head >
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<link rel="stylesheet"
+		th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+		type="text/css">
+		
+<title>Add-Course</title>
+</head>
+<body class="bg-light">
+
+ <div th:replace="/shared/admin-nav::topnavbar"></div>
+
+<!-- start container -->
+<!-- start Dashboard area -->
+<div class="container-fluid">
+     <div class="row"> <!-- start Row -->
+      <nav class="col-md-2 navbar-secondary bg-secondary sidebar border"><!-- Side navigation bar starts-->
+     
+     <div th:replace="/shared/admin-sidenav::dashsidenav"></div>
+     </nav><!-- End side bar -->
+   
+         
+          <div class="col-sm-9 col-md-10 dasharea"><!-- dasharea starts -->
+             <button type="button" class="navbar-toggler btn-outline ml-2 mt-2 bg-info text-white" data-toggle="collapse" data-target="#dashsidemenu" >Menu
+                     <span class="navbar-toggler-icon"></span>
+           </button>
+           <hr/>
+ 
+    <div class="container my-2 bg-light notice">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+		
+			<form  th:action="@{/dashboard/course/saveChanges}" th:object="${courseForm}" th:method="POST">
+			<h1> Course Panel</h1>
+			<hr/>
+			
+				<div class="form-group">
+					<label>Course Code </label>
+					<input type="text" class="form-control" placeholder="Enter course code" th:field="*{courseCode}"/>
+				</div>
+				<div class="form-group">
+					<label>Full Marks </label>
+					<input type="text" class="form-control" placeholder="Enter full marks" th:field="*{fullMarks}"/>
+				</div>
+				<div class="form-group">
+					<label>Pass Marks </label>
+					<input type="text" class="form-control" placeholder="Enter pass marks" th:field="*{passMarks}"/>
+				</div>
+				<div class="form-group">
+					<label>Grace Marks</label>
+					<input type="text" class="form-control" placeholder="Enter grace marks" th:field="*{graceMarks}"/>
+				</div>
+				<button type="submit" class="btn btn-primary btn-block my-2">save</button>
+								
+			</form>
+		</div>
+		<div class="col-md-1"> </div>
+	</div>
+</div>
+ 
+
+ </div><!-- End Dashboard area -->
+          </div><!-- End Row -->
+     </div><!-- End Container -->        
+ 
+ <!-- footer starts -->
+	<div th:replace="/shared/footer::foot"></div>
+	<!-- end footer -->
+ 
+ 
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<link rel="stylesheet"
+		th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+		type="text/css">
+<meta charset="ISO-8859-1">
+<title>Results</title>
+</head>
+<body>
+ <div class="container text-center resultform">
+ 
+   <!-- header college details -->
+    <div class="bg-light row my-5 p-3">
+         <div class="col-md-2">
+            <img src="/images/declogo.png" alt="Nast Logo" width="100px">
+         </div>
+          <div class="col-md-10">
+     <p>National Academy of Science and Technology</p>
+    <h3>Dhangadhi Engineering College</h3>
+        <p>(Affiliated to Pokhara University)</p>
+        <h5>Dhangadhi,Kailalli,Nepal</h5>
+    <h3>Pre-University Examination Result</h3>
+    </div>
+    </div><!-- header end -->
+    
+    <!-- students information -->
+    <div class="row mb-3">
+          <div class="col-md-3">
+               <P>Program:</P>
+              <p> Total Working Days:</p>
+          </div>
+          <div class="col-md-3">
+             <p> Semester:</p>
+             <p>Operated Class Days:</p>
+          </div>
+          <div class="col-md-3">
+             <p> Subject:</p>
+          </div>
+          <div class="col-md-3">
+           <p> Lecturer's name:</p>
+          
+          </div>
+    
+    </div><!-- end students information -->
+  
+  <!-- Result table starts -->  
+ <div class="table-responsive">
+ <table class="table table-bordered">
+  <thead class="text-justify text-center">
+    <tr>
+      <th rowspan="4" scope="col">R.N.</th>
+      <th rowspan="4" scope="col">Student Name</th>
+      <th scope="col">Head </th>
+       <th colspan="6" scope="col">Pre-University Examination</th>
+          <th rowspan="4"scope="col">Remarks</th>
+    </tr>
+    
+    <tr>
+         <th scope="col">F.M</th>
+         <th colspan="6" scope="col">50%,(25 Marks)</th>         
+    </tr>
+    
+    <tr>
+         <th rowspan="2" scope="col">P.U. Roll No. </th>
+         <th colspan="2" scope="col">Attendance</th>
+         <th rowspan="2" scope="col">Uniform/Dis.(5)B</th>
+         <th colspan="2" scope="col">Academic Marks</th>
+         <th rowspan="2" scope="col">Total(50%) <br/> Marks(25)<br/> Y=(A+B+C)</th>
+     </tr>   
+         
+     <tr>
+            <th scope="col">Days </th>
+            <th scope="col">Marks(3.75)A </th>
+            <th scope="col">Out of 100 </th>
+            <th scope="col">Out of (16.25)C </th>
+     </tr> 
+  </thead>
+  <tbody class="text-justify text-center">
+    <tr>
+      <th scope="row">1</th>
+      <td>shreejan lohar </td>
+      <td>19070090</td>
+      <td>25</td>
+      <td>3.75</td>
+      <td>5</td>
+      <td>25</td>
+      <td>50</td>
+      <td>25</td>
+      <td></td>      
+    </tr>
+ 
+   <tr>
+      <th scope="row">2</th>
+      <td>Mukund Joshi </td>
+      <td>19070090</td>
+      <td>25</td>
+      <td>3.75</td>
+      <td>5</td>
+      <td>25</td>
+      <td>50</td>
+      <td></td>      
+    </tr>
+ 
+    <tr>
+      <th scope="row">3</th>
+      <td>Deepa Ojha </td>
+      <td>19070090</td>
+      <td>25</td>
+      <td>3.75</td>
+      <td>5</td>
+      <td>25</td>
+      <td>50</td>
+      <td>25</td>
+      <td></td>      
+    </tr>
+    
+     <tr>
+      <th scope="row">4</th>
+      <td>Manisha Kunwar </td>
+      <td>19070090</td>
+      <td>25</td>
+      <td>3.75</td>
+      <td>5</td>
+      <td>25</td>
+      <td>50</td>
+      <td>25</td>
+      <td></td>      
+    </tr>
+ 
+  </tbody>
+</table>
+ </div><!--end result table -->
+</div>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	
+
+</body>
+</html>
